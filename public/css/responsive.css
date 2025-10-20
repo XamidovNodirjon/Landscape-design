@@ -1,0 +1,463 @@
+/* Responsive Styles */
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-content {
+        gap: 3rem;
+    }
+    
+    .contact-content {
+        gap: 3rem;
+    }
+    
+    .footer-content {
+        gap: 2rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    /* Header */
+    .nav-desktop,
+    .header-right {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .logo-text {
+        display: none;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    /* Partners */
+    .partners-track {
+        gap: 1rem;
+    }
+    
+    .partner-card {
+        min-width: 160px;
+        padding: 1.5rem;
+    }
+    
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-text {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Services Detailed */
+    .service-detailed {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .service-detailed:nth-child(even) {
+        direction: ltr;
+    }
+    
+    .service-detailed img {
+        height: 250px;
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    /* CTA */
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    /* Header */
+    .header-content {
+        height: 60px;
+    }
+    
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    
+    /* Sections */
+    .services-preview,
+    .partners,
+    .about,
+    .services,
+    .news,
+    .contact,
+    .cta {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Service Cards */
+    .service-card {
+        padding: 1.25rem;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+    }
+    
+    .service-title {
+        font-size: 1.1rem;
+    }
+    
+    /* Partners */
+    .partner-card {
+        min-width: 140px;
+        padding: 1.25rem;
+    }
+    
+    .partner-logo {
+        font-size: 2.5rem;
+    }
+    
+    .partner-name {
+        font-size: 1rem;
+    }
+    
+    /* About Stats */
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    /* Services Detailed */
+    .service-detailed {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .service-detailed img {
+        height: 200px;
+    }
+    
+    .service-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* News */
+    .news-card img {
+        height: 180px;
+    }
+    
+    .news-content {
+        padding: 1.25rem;
+    }
+    
+    .news-title {
+        font-size: 1.1rem;
+    }
+    
+    .news-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    /* Contact */
+    .contact-form {
+        padding: 1.25rem;
+    }
+    
+    .contact-item {
+        padding: 1.25rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .contact-icon {
+        align-self: center;
+    }
+    
+    /* CTA */
+    .cta-title {
+        font-size: 1.75rem;
+    }
+    
+    .cta-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 40px 0 20px;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .service-card,
+    .partner-card,
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .service-detailed {
+        padding: 1.25rem;
+    }
+    
+    .news-content {
+        padding: 1rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 70vh;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .scroll-indicator {
+        bottom: 20px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-background {
+        background-image: url('https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=2400&h=1350&fit=crop');
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .mobile-nav,
+    .mobile-nav-overlay,
+    .scroll-indicator,
+    .cta,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .hero-background,
+    .hero-overlay {
+        display: none;
+    }
+    
+    .hero-content {
+        color: #111827;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .section-title {
+        font-size: 18pt;
+        margin-bottom: 1rem;
+    }
+    
+    .service-card,
+    .news-card,
+    .contact-item {
+        box-shadow: none;
+        border: 1px solid #e5e7eb;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .hero-background {
+        animation: none;
+    }
+    
+    .partners-track {
+        animation: none;
+    }
+    
+    .scroll-indicator {
+        animation: none;
+    }
+    
+    .scroll-wheel {
+        animation: none;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    /* This can be implemented if dark mode is desired */
+    /* Currently keeping light theme as specified */
+}
+
+/* Focus Styles for Accessibility */
+@media (prefers-reduced-motion: no-preference) {
+    .nav-link:focus,
+    .mobile-nav-link:focus,
+    .hero-btn:focus,
+    .service-link:focus,
+    .news-link:focus,
+    .cta-btn:focus,
+    .form-submit:focus,
+    .lang-btn:focus,
+    .mobile-lang-btn:focus {
+        outline: 2px solid #10b981;
+        outline-offset: 2px;
+    }
+}
